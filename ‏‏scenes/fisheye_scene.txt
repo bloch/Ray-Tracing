@@ -1,0 +1,62 @@
+# Camera: 	px   	py   	pz 	lx  	ly  	lz 	ux  	uy  	uz 	sc_dist	sc_width
+#cam 	  	0   	20	0 	0   	-100   	-4  	0   	1   	0  	1.4	1	false	1
+cam 	  	0   	1.5	0 	0   	-100   	-4  	0   	1   	0  	0.2	1	true	0.5
+# Settings: 	bgr  	bgg  	bgb	sh_rays	rec_max 
+set 		1  	1  	1   	5 	10
+
+# Material:	dr    	dg    	db	sr   	sg   	sb 	rr   	rg  	rb	phong 	trans
+mtl		0.51	0.69	0.72	1	1	1	0.2	0.1	0.1	300	0
+mtl		0	0.43	0.467	1	1	1	0.1	0.1	0.1	300	0
+mtl		0.93	0.96	0.976	1	1	1	0.1	0.1	0.2	300	0
+mtl		0.88    0.58    0.47	0.2	0.2	0.2	0.1     0.1     0.1	300	0.5
+mtl		0.51	0.77	0.745	1	1	1	0.2	0.1	0.1	300	0
+
+# Planes:	nx	ny	nz	offset	mat_idx
+pln		0	1	0	-1	2
+
+# Boxes:	nx	ny	nz	scale   mat_idx
+#box		0	0	0	1	1
+
+# Spheres:	cx   	cy   	cz  	radius 	mat_idx
+#sph		0	0	0	1	4
+
+sph		0	0	-5	1	1
+sph 		0	0	5	1	1
+sph		5	0	0	1	1
+sph		-5	0	0	1	1
+sph		5	0	-5.3	1	1
+sph 		-5	0	5.3	1	1
+sph		5	0	5.3	1	1
+sph		-5	0	-5.3	1	1
+
+sph		5	0	-3.5	0.6	1
+sph		5	0	-2.4	0.4	1
+sph		5	0	-1.4	0.6	1
+
+sph		5	0	3.5	0.6	1
+sph		5	0	2.4	0.4	1
+sph		5	0	1.4	0.6	1
+
+sph		-5	0	3.5	0.6	1
+sph		-5	0	2.4	0.4	1
+sph		-5	0	1.4	0.6	1
+
+sph		-5	0	-3.5	0.6	1
+sph		-5	0	-2.4	0.4	1
+sph		-5	0	-1.4	0.6	1
+
+sph		2.3	0.35	-5	1.35	1
+
+sph		-2.3	0.35	-5	1.35	1
+
+sph		-2.3	0.35	5	1.35	1
+
+sph		2.3	0.35	5	1.35	1
+
+
+# Lights:	px	py	pz	r	g	b	spec	shadow	width
+lgt		0	3	0	0.25	0.25	0.25	0.5	0.9	1
+lgt		-3	3	-3	0.25	0.25	0.25	0.5	0.9	1
+lgt		-3	3	3	0.25	0.25	0.25	0.5	0.9	1
+lgt		3	3	-3	0.25	0.25	0.25	0.5	0.9	1
+lgt		3	3	3	0.25	0.25	0.25	0.5	0.9	1
